@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+
+}
+
+body{
+    background-image: linear-gradient(100.5deg,  rgba(148,146,236,1) 17.7%, rgba(245,194,194,1) 76.1% );
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+}
+
+main.container{
+    background: white;
+    width: 370px;
+    min-height: 150px;
+    padding: 2rem;
+    box-shadow: 5px 5px 25px rgb(100, 98, 98);
+    border-radius: 10px;
+}
+
+main h2{
+    font-weight: lighter;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+main h2::before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 110px;
+    bottom: 0px;
+    left: 0;
+    border-radius: 8px;
+    background-image: linear-gradient( 100.5deg,  rgba(148,146,236,1) 17.7%, rgba(245,194,194,1) 76.1% );
+}
+
+.div-novatarefa{
+    position: relative;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+.div-novatarefa input{
+    outline: none;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 1.0);
+    width: 83%;
+}
+
+.underline::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 83%;
+    bottom: -5px;
+    left: 0;
+    background-color: rgb(196, 196, 196);
+}
+
+.underline::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 83%;
+    bottom: -5px;
+    left: 0;
+    background-color: rgb(245, 39, 118);
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+    transform-origin: left;
+}
+
+.div-novatarefa input:focus ~ .underline::after{
+    transform: scaleX(1);
+    
+}
+
+.div-novatarefa input::placeholder{
+    color: rgb(43, 0, 99);
+    margin-left: ;
+}
+
+form input[type="submit"]{
+    background: linear-gradient(to left, rgb(167, 221, 238), rgb(218, 103, 170));
+    width: 44px;
+    color: white;
+    font-size: 16px;
+    font-weight: bolder;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form input[type="submit"]:hover{
+    background: linear-gradient(to right, rgb(167, 221, 238), rgb(218, 103, 170));
+}
+
+ul{
+    margin-top: 20px;
+    position: relative;
+}
+
+ul li{
+    list-style-type: none;
+    font-size: 17px;
+    width: 83%;
+    line-height: 2;
+    transform: all 0.3s;
+}
+
+li:hover{
+    font-weight: bolder;
+}
+
+span{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: brown;
+}
